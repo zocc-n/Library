@@ -9,27 +9,88 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-
-    <form action="#" method="POST">
-        <div class="formSection">
-            <label for="title">Title</label>
-            <input type="text" id="title" name="title">
-        </div>
-        <div class="formSection">
-            <label for="author">Author</label>
-            <input type="text" id="author" name="author">
-        </div>
-        <div class="formSection">
-            <label for="pages">Pages</label>
-            <input type="text" id="pages" name="pages">
-        </div>
-        <div class="formSection">
-            <label for="read">Read</label>
-            <input type="text" id="read" name="read">
-        </div>
-        <div class="formSection">
-            <button type="submit">Add Book</button>
-        </div>
-    </form>
+    <div id="flex-container">
+        <section id="side">
+            <form action="#" method="POST">
+                <div class="formSection">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title">
+                </div>
+                <div class="formSection">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author">
+                </div>
+                <div class="formSection">
+                    <label for="pages">Pages</label>
+                    <input type="text" id="pages" name="pages">
+                </div>
+                <div class="formSection">
+                    <label for="read">Read</label>
+                    <input type="text" id="read" name="read">
+                </div>
+                <div class="formSection">
+                    <button type="submit">Add Book</button>
+                </div>
+            </form>
+        </section>
+        <main id="grid-container">
+            <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quisquam quibusdam ullam nihil sed deserunt voluptates aut quia perspiciatis voluptatibus, odit fugit repellat earum saepe eos expedita sunt et magnam.</div>
+            <div class="card">
+                <div class="card-inner-container">
+                    <div class="name-container">
+                        <p class="bookName">Longer Book name</p>
+                    </div>
+                    <div class="info-container">
+                        <p class="bookAuthor"><b>Author: </b>Author Name</p>
+                        <p class="bookPages"><b>Pages: </b>1980</p>
+                        <p class="bookRead"><b>Read: </b>Yes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner-container">
+                    <div class="name-container">
+                        <p class="bookName">Longer Book Name</p>
+                    </div>
+                    <div class="info-container">
+                        <p class="bookAuthor"><b>Author: </b>Longer Author Name</p>
+                        <p class="bookPages"><b>Pages: </b>1970</p>
+                        <p class="bookRead"><b>Read: </b>Yes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner-container">
+                    <div class="name-container">
+                        <p class="bookName">Book Name</p>
+                    </div>
+                    <div class="info-container">
+                        <p class="bookAuthor"><b>Author: </b>Longer Author Name</p>
+                        <p class="bookPages"><b>Pages: </b>1960</p>
+                        <p class="bookRead"><b>Read: </b>No</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">X</div>
+            <div class="card">X</div>
+            <div class="card">X</div>
+            <div class="card">X</div>
+            <div class="card">X</div>
+            <div class="card">X</div>
+            <div class="card">X</div>
+            <div class="card">X</div>
+            <div class="card">X</div>
+            <div class="card">X</div>
+            <div class="card">X</div>
+            <div class="card">X</div>
+            <div class="card">X</div>
+            <div class="card">X</div>
+            <div class="card">X</div>
+            <div class="card">X</div>
+            <div class="card">X</div>
+            <div class="card">X</div>
+            <div class="card">X</div>
+        </main>
+    </div>
 </body>
 </html>
