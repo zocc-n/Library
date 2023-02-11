@@ -11,10 +11,65 @@ body {
 
 #flex-container {
     display: flex;
+    border: 3px solid aqua;
 }
 
 #side {
     border: 2px solid red;
+    margin-top: 10px;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+#intro {
+    color: dodgerblue;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 20px;
+    height: min-content;
+}
+
+#intro > p {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+#intro > #welcome{
+    font-size: 1.3rem;
+    font-weight: bold;    
+}
+
+form {
+    margin-top: 25px;
+    border: 2px solid blueviolet;
+}
+
+.formSection {
+    border: 2px solid olivedrab;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 10px 0;
+}
+
+.formSection > label {
+    background-color: cadetblue !important;
+    border-radius: 3px 3px 0 0;
+    padding: 3px 0 0 3px;
+}
+
+.formSection > input{
+    height: 25px;
+    border-radius: 0 0 3px 3px ;
+}
+
+.formButton {
+    display: flex;
+    flex-direction: column;
+}
+
+.formButton > button {
+    height: 30px;
 }
 
 main {

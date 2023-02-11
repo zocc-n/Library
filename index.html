@@ -11,6 +11,11 @@
 <body>
     <div id="flex-container">
         <section id="side">
+            <div id="intro">
+                <p id="welcome">Welcome to the Book Tracker.</p>
+                <br>
+                <p>Enter a book data below to create a card for it.</p>
+            </div>
             <form action="#" method="POST">
                 <div class="formSection">
                     <label for="title">Title</label>
@@ -22,18 +27,19 @@
                 </div>
                 <div class="formSection">
                     <label for="pages">Pages</label>
-                    <input type="text" id="pages" name="pages">
+                    <input type="number" id="pages" name="pages" min="1">
                 </div>
                 <div class="formSection">
                     <label for="read">Read</label>
                     <input type="text" id="read" name="read">
                 </div>
-                <div class="formSection">
+                <div class="formButton">
                     <button type="submit">Add Book</button>
                 </div>
             </form>
         </section>
-        <main id="grid-container">
+ <!-- --------------------------------------------------------------------- -->
+        <main>
             <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quisquam quibusdam ullam nihil sed deserunt voluptates aut quia perspiciatis voluptatibus, odit fugit repellat earum saepe eos expedita sunt et magnam.</div>
             <div class="card">
                 <div class="card-inner-container">
