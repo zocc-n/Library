@@ -54,7 +54,7 @@ form {
 }
 
 .formSection > label {
-    background-color: cadetblue !important;
+    background-color: cadetblue;
     border-radius: 3px 3px 0 0;
     padding: 3px 0 0 3px;
 }
@@ -71,6 +71,16 @@ form {
 
 .formButton > button {
     height: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 1px 1px 10px rgb(155, 215, 215);
+}
+
+button:active {
+    background-color: rgb(175, 215, 215);
 }
 
 main {
@@ -94,7 +104,7 @@ main {
     padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     align-content: center;
 }
@@ -104,12 +114,23 @@ main {
     padding-bottom: 10px;
 }
 
-.bookName{
-    font-size: 1.5em;
+.remove-container {
+    border: 1px solid sienna;
+    width: 100%;
+}
+
+.remove-container > div {
+    float: right;
+    border: 1px solid gold;
+    /* color: rgb(45, 35, 35);
+    background-color: rgb(195, 215, 215);
+    border: none;
+    cursor: pointer; */
 }
 
 .card-inner-container {
     border: 1px solid pink;
+    width: 100%;
 }
 
 .name-container {
@@ -118,18 +139,59 @@ main {
     justify-content: center;
     align-items: center;
     align-content: center;
+    text-align: center;
 }
 
-.name-container > p {
-    text-align: center;
+.bookName{
+    font-size: 1.5em;
 }
 
 .info-container {
     border: 1px solid lightgreen;
     margin-top: 20px;
     display: flex;
+    flex-direction: column;
+}
+
+/* .info-left {
+    border: 1px solid cornflowerblue;
 }
 
 .info-right {
     margin-left: 5px;
+    border: 1px solid blue;
+    width: 100%;
+} */
+
+.author-container {
+    border: 1px solid hotpink;
+    display: flex;
+    flex-direction: row;
+}
+
+.author-container > div:first-child,
+.pages-container > div:first-child,
+.read-container > div:first-child
+{
+    margin-right: 5px;
+    border: 1px solid firebrick;
+    width: 55px;
+}
+
+.pages-container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid firebrick;
+}
+
+.read-container {
+    border: 1px solid darkgreen;
+    display: flex;
+    flex-direction: row;
+}
+
+.switch-container {
+    border: 1px solid darkorange;
+    height: 100%;
+    width: 100%;
 }
